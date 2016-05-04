@@ -1,4 +1,4 @@
- ISOB<br>
+<strong> ISOB<br><strong>
 scss;
 react;
 gulp;
