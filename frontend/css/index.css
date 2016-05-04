@@ -1,4 +1,38 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Main;
+  /* Гарнитура шрифта */
+  src: url(fonts/1.ttf);
+  /* Путь к файлу со шрифтом */ }
 * {
-  color: red; }
+  font-family: Main,Arial;
+  font-size: 30px;
+  color: black; }
+
+img {
+  width: 80px; }
+
+#logo {
+  font-size: 40px; }
+
+#header {
+  padding: 25px; }
+  #header * {
+    display: inline-block; }
+
+#navBar {
+  float: right;
+  vertical-align: bottom;
+  margin-top: 60px; }
+
+#gallery {
+  border-right: 2px solid black;
+  padding-right: 20px; }
+
+#LK {
+  padding-left: 20px; }
+
+#LK:hover, #gallery:hover {
+  text-decoration: underline; }
 
 /*# sourceMappingURL=index.css.map */
