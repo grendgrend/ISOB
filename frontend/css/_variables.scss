@@ -1,5 +1,5 @@
 $mainColor:#9DD2D8;
-$mainTextColor:darken(#9DD2D8,50%);
+$mainTextColor:darken($mainColor,50%);
 $textColor: lighten($mainColor,20%);
 $mainFontSize:30px;
 $paddingForNavBar:20px;
