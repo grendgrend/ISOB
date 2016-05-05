@@ -1,5 +1,5 @@
 <strong> ISOB<br></strong>
 scss;
-react;
+backbone+marionette;
 gulp;
-nodejs.
+webpack;
