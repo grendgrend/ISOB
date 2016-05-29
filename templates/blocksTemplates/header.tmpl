@@ -1,0 +1,18 @@
+<div id="header">
+    <div id="logo">
+        <img src="/frontend/css/images/logo.jpg" alt="logo" id="logoImg">
+        Совушкин
+    </div>
+    <div id="navBar">
+        {% if showGallery %}
+        <div id="gallery">Галлерея</div>
+        {% endif %}
+        {% if showLK %}
+        <div id="LK">Личный кабинет</div>
+        {% endif %}
+        <div id="basket">
+            <img src="/frontend/css/images/basket.png" alt="Корзина">
+            <div id="count"> {{ basketItem }}</div>
+        </div>
+    </div>
+</div>
