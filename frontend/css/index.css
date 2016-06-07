@@ -62,15 +62,16 @@ h1 {
 
 #filter, #content {
   display: inline-block;
-  height: 75%;
-  background: #3f949d; }
+  min-height: 75%;
+  background: rgba(63, 148, 157, 0.8); }
 
 #filter {
   width: 20%;
   margin-right: 2%; }
 
 #content {
-  width: 72%; }
+  width: 72%;
+  text-align: center; }
 
 #footer {
   font-size: 23.07692px;
@@ -107,5 +108,39 @@ h1 {
 #categoryForm * {
   font-size: 25px;
   color: #c1e3e7; }
+
+.galleryItem {
+  display: inline-block;
+  background: white;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: #224f54 2px 2px 1px;
+  position: relative; }
+  .galleryItem img {
+    width: 300px; }
+
+.getItem {
+  background: #224f54;
+  border: none;
+  color: #e6f4f5;
+  font-size: 25px;
+  padding: 5px;
+  margin: 10px; }
+
+.itemPrice {
+  margin-right: 10px;
+  font-family: Arial; }
+
+.searchTags {
+  display: inline-block;
+  background: #D3D4D4;
+  padding: 5px;
+  margin: 2px;
+  font-size: 23px;
+  box-shadow: grey 1px 1px 1px; }
+
+#tags {
+  padding: 5px;
+  text-align: center; }
 
 /*# sourceMappingURL=index.css.map */

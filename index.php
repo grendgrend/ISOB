@@ -1,4 +1,31 @@
 <?php
+/*Database config*/
+$host="localhost";
+$userName="root";
+$password="1";
+$database="Sovushkin";
+
+/*Mysql connect*/
+$mysqli = new mysqli($host, $userName, $password, $database);
+$mysqli->set_charset("utf8");
+$resultItems = $mysqli->query("SELECT * FROM Items");
+$resultTags = $mysqli->query("SELECT * FROM tags");
+$items=array();
+foreach ($resultItems as $value){
+    $items[]=array(
+        'URL'=>$value['url'],
+        'name'=>$value['name'],
+        'price'=>$value['price'].'p.'
+    );
+}
+$tags=array();
+foreach ($resultTags as $value){
+    $tags[]=array(
+        'name'=>$value['tag']
+    );
+}
+shuffle($items);
+/*Twig modules*/
     require_once './vendor/autoload.php';
     $loader = new Twig_Loader_Filesystem(array('./templates/pagesTemplates','./templates/blocksTemplates'));
     $twig = new Twig_Environment($loader);
@@ -6,17 +33,7 @@
         'showGallery'=>false,
         'showLK'=>true,
         'basketItem'=>'2',
-        'gallery'=>array(
-           array(
-                'SRC'=>'1.jpg',
-                'name'=>'совушкин',
-                'price'=>500
-            ),
-            array(
-                'SRC'=>'2.jpg',
-                'name'=>'котик в сосновом бору',
-                'price'=>300
-            )
-        )
+        'gallery'=>$items,
+        'filter'=>$tags
     ));
 ?>
