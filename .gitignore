@@ -1,3 +1,5 @@
 vendor/
 frontend/css/.sass-cache/
 .idea/
+node_modules/
+public/

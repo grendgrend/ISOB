@@ -1,5 +1,6 @@
 <strong> ISOB<br></strong>
-scss;
-react;
-gulp;
-nodejs.
+scss;<br>
+gulp;<br>
+webpack;<br>
+composer;<br>
+twig.<br>
