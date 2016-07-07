@@ -8,8 +8,8 @@ $database="Sovushkin";
 /*Mysql connect*/
 $mysqli = new mysqli($host, $userName, $password, $database);
 $mysqli->set_charset("utf8");
-$resultItems = $mysqli->query("SELECT * FROM Items");
-$resultTags = $mysqli->query("SELECT * FROM tags");
+$resultItems = $mysqli->query("SELECT * FROM Items");//Убрать
+$resultTags = $mysqli->query("SELECT * FROM tags");//Убрать
 $items=array();
 foreach ($resultItems as $value){
     $items[]=array(
@@ -32,7 +32,7 @@ shuffle($items);
     echo $twig->render('index.tmpl',array(
         'showGallery'=>false,
         'showLK'=>true,
-        'basketItem'=>'2',
+        'basketItem'=>'5',
         'gallery'=>$items,
         'filter'=>$tags
     ));

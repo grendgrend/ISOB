@@ -1,12 +1,19 @@
 <div id="filter">
+    <div class="filterCategory">Воспользуйтесь поиском по сайту:</div>
     <form id="searchForm">
         <input id="searchImage" name="search" placeholder="поиск">
-        <div id="searchButton"><img src="/frontend/css/images/search.png" alt="search"></div>
     </form>
-    Поиск по тегам:
+    <div class="filterCategory">Ищите по категориям:</div>
     <div id="tags">
         {% for tag in filter %}
             <div class="searchTags">{{ tag.name }}</div>
         {% endfor %}
+    </div>
+    <div class="filterCategory">Задайте ценовой интервал:</div>
+    <div id="searchPrice">
+        <span>от</span>
+        <input type="text" maxlength="5" id="priceFrom" class="priceFilter">
+        <span>до</span>
+        <input type="text" maxlength="5" id="priceTo" class="priceFilter">
     </div>
 </div>

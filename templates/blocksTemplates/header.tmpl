@@ -1,7 +1,7 @@
 <div id="header">
     <div id="logo">
-        <img src="/frontend/css/images/logo.jpg" alt="logo" id="logoImg">
-        Совушкин
+        <img src="/style/images/logo.png" alt="logo" id="logoImg">
+        <div id="logoName">Совушкин</div>
     </div>
     <div id="navBar">
         {% if showGallery %}
@@ -11,8 +11,9 @@
         <div id="LK">Личный кабинет</div>
         {% endif %}
         <div id="basket">
-            <img src="/frontend/css/images/basket.png" alt="Корзина">
+            <img src="/style/images/basket.png" alt="Корзина">
             <div id="count"> {{ basketItem }}</div>
         </div>
     </div>
 </div>
+<hr id="headerBorder"/>
